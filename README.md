@@ -6,7 +6,7 @@
 go-ipset provides basic bindings for the [ipset kernel utility](http://ipset.netfilter.org/).
 
 ## Installation
-```go
+```
 go get github.com/gmccue/go-ipset
 ```
 
@@ -31,7 +31,6 @@ if err != nil {
 
 ### Adding an entry to an ipset
 ```go
-// Add a new entry to your ipset
 err := ipset.Add("my_set", "127.0.0.1")
 if err != nil {
     // Your custom error handling here.
@@ -40,7 +39,6 @@ if err != nil {
 
 ### Removing an entry from an ipset
 ```go
-err := ipset.Delete("my_set", "127.0.0.1")
 if err != nil {
     // Your custom error handling here.
 }
