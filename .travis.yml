@@ -7,5 +7,9 @@ go:
   - 1.5
   - tip
 
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq iptables ipset
+
 script:
   - go test -v ./...
